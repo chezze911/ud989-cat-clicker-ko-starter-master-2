@@ -3,8 +3,8 @@ var ViewModel = function() {
 	this.name = ko.observable('Tabby');
 	this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
 	this.imgAttribution = ko.observable("http://placekitten.com/g/1600/900");
+	this.nicknames = ko.observableArray(['smelly', 'itchy', 'scratchy', 'dogbreath']);
 	var self = this;
-
 
 	self.catlevel = ko.computed(function() {
 		var clicks = self.clickCount();
